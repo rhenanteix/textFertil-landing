@@ -1,0 +1,354 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções - TextFertil Fertilizantes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .hidden {
+            display: none;
+        }
+
+        ul.space-y-4 li a {
+            font-size: 1.25rem; /* Aumenta o tamanho da fonte */
+            font-weight: bold;  /* Deixa o texto em negrito */
+            color: #34d399;     /* Define a nova cor do link */
+            transition: color 0.3s ease; /* Adiciona uma transição suave para o hover */
+            margin: 4rem;
+        }
+
+        ul.space-y-4 li a:hover {
+            color: #34d399; /* Muda a cor do link ao passar o mouse */
+            text-decoration: underline; /* Mantém o sublinhado no hover */
+        }
+
+
+        #product-details {
+            background-color: #f9fafb; /* Cor de fundo clara */
+            padding: 1.5rem;           /* Espaçamento interno */
+            border-radius: 0.75rem;    /* Bordas arredondadas */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+            transition: transform 0.3s ease; /* Animação suave */
+            margin-top: 2rem;
+        }
+
+        #product-details h2 {
+            color: #333; /* Cor do título */
+            font-size: 1.875rem; /* Tamanho da fonte do título */
+            font-weight: 700; /* Título em negrito */
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        #product-details p {
+            color: #555; /* Cor do texto */
+            text-align: center;
+            font-size: 1.125rem; /* Tamanho da fonte */
+            margin-bottom: 1rem;
+        }
+
+        /* Estilizar os benefícios */
+        #product-benefits {
+            background-color: #e2e8f0; /* Fundo leve para destacar benefícios */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        #product-benefits ul {
+            list-style-type: none; /* Remover os marcadores */
+            padding-left: 0;
+            margin: 0;
+        }
+
+        #product-benefits li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Ícone de check na frente de cada benefício */
+        #product-benefits li::before {
+            content: '\f058'; /* Ícone de check (FontAwesome) */
+            font-family: 'Font Awesome 5 Free';
+            color: #34d399; /* Cor verde */
+            margin-right: 0.75rem;
+            font-weight: 900;
+        }
+
+        #product-details img {
+            width: 100%; /* Ajusta a largura da imagem ao card */
+            border-radius: 0.5rem; /* Bordas arredondadas para a imagem */
+            margin-top: 1.5rem; /* Espaço entre o conteúdo e a imagem */
+        }
+
+        /* Adiciona uma animação ao passar o mouse sobre o card */
+        #product-details:hover {
+            transform: translateY(-5px); /* Elevação suave no hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="bg-green-900 text-white">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="flex items-center">
+                <img src="assets/img/logo.png" alt="TextFertil Fertilizantes" class="h-10 w-10">
+                <span class="ml-3 text-xl font-bold">TextFertil Fertilizantes</span>
+            </div>
+            <nav class="flex space-x-6">
+                <a href="index.html" class="hover:text-gray-300">INÍCIO</a>
+                <a href="sobre.html" class="hover:text-gray-300">SOBRE</a>
+                <a href="solucoes.html" class="hover:text-gray-300">SOLUÇÕES</a>
+                <a href="contato.html" class="hover:text-gray-300">CONTATO</a>
+            </nav>
+            <div class="text-sm">
+                <span>Ligue agora mesmo</span>
+                <span class="font-bold">(53) 9 9179 4478</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <img src="assets/img/produtos/IMG_7848.JPG" alt="Agricultural machinery in a field" class="w-full h-64 object-cover">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+            <h1 class="text-4xl font-bold">Nossas soluções</h1>
+            <p class="mt-2">Saiba mais sobre a TextFertil e nossas soluções.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-12 px-6">
+        <p class="text-lg text-black-400 leading-relaxed mb-8 text-center">
+            A TextFertil trabalha com Fertilizantes Especiais, testados e aprovados com comprovada eficiência agronômica e qualidade física e química. Nossos Fertilizantes possuem a capacidade de fornecimento contínuo dos nutrientes para as diferentes culturas, entregando PRODUTIVIDADE e SUSTENTABILIDADE através do correto posicionamento de cada tecnologia. Clique em um produto a seguir para saber mais.
+        </p>
+        <ul class="space-y-4">
+            <li><a href="#" class="text-blue-600 hover:underline" data-product="calcario">Calcario →</a></li>
+            <li><a href="#" class="text-blue-600 hover:underline" data-product="fosfato">Fosfato Natural Reativo →</a></li>
+            <li><a href="#" class="text-blue-600 hover:underline" data-product="gesso">Gesso Agricola →</a></li>
+
+            <li><a href="#" class="text-blue-600 hover:underline" data-product="kcl">KCL →</a></li>
+            <li><a href="#" class="text-blue-600 hover:underline" data-product="map">Map →</a></li>
+            <li><a href="#" class="text-blue-600 hover:underline" data-product="npk">NPK Formulados →</a></li>
+
+            <li><a href="#" class="text-blue-600 hover:underline" data-product="simples">Super Simples →</a></li>
+            <li><a href="#" class="text-blue-600 hover:underline" data-product="triplo">Super triplo →</a></li>
+            <li><a href="#" class="text-blue-600 hover:underline" data-product="ureia">Ureia →</a></li>
+            
+            <li><a href="#" class="text-blue-600 hover:underline" data-product="varreduras">Varreduras →</a></li>
+        </ul>
+
+       
+        
+        <!-- Card Section -->
+        <div id="product-details" class="hidden">
+            <h2 id="product-title"></h2>
+            <p id="product-description"></p>
+            <div id="product-benefits"></div>
+            <img id="product-image" src="" alt="Imagem do produto">
+        </div>
+    </main>
+    
+    <!-- Contact Section -->
+    <section class="bg-green-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-4">Fale conosco ou solicite um orçamento personalizado</h2>
+            <p class="mb-8">Descubra como a TextFertil pode ajudar seu negócio a crescer ainda mais.</p>
+            <div class="flex justify-between items-center">
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <img src="assets/img/logo.png" alt="Tuch Agribusiness logo" class="h-10 w-10">
+                        <span class="ml-3 text-xl font-bold">TextFertil</span>
+                    </div>
+                </div>
+                <a href="#" class="bg-white text-blue-900 px-6 py-3 rounded-full font-bold hover:bg-gray-200">Entrar em Contato →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/553591794478" class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+</body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const productLinks = document.querySelectorAll('a[data-product]');
+    
+    productLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            
+            const product = this.getAttribute('data-product');
+            const detailsSection = document.getElementById('product-details');
+            const productTitle = document.getElementById('product-title');
+            const productDescription = document.getElementById('product-description');
+            const productBenefits = document.getElementById('product-benefits')
+            const productImage = document.getElementById('product-image');
+            
+            let title = '';
+            let description = '';
+            let benefits = '';
+            let imageSrc = '';
+
+            // Calcario
+            // Fosfato Natural Reativo
+            // Gesso Agricola
+            // KCL
+            // Map
+            // NPK Formulados
+            // Super Simples
+            // Super Ttriplo
+            //Ureia
+            //Varreduras
+            
+            switch (product) {
+                case 'calcario':
+                    title = 'Calcario';
+                    description = 'O Enxofre Bentonita é um fertilizante essencial para fornecer enxofre às plantas, melhorando a qualidade do solo e aumentando a produtividade das colheitas.';
+                    benefits = `
+                        <ul>
+                            <li>Melhoria na eficiência de outros nutrientes essenciais, como N, P e K.</li>
+                            <li>Maior resistência das plantas a pragas e doenças.</li>
+                            <li>Correção da acidez do solo.</li>
+                        </ul>
+                    `;
+                    imageSrc = 'assets/img/produtos/Calcario/Mao-pa-calcario-dolomitico.jpg';
+                    break;
+                case 'fosfato':
+                    title = 'Fosfato Natural Reativo';
+                    description = 'A Ulexita Granulada é uma fonte natural de boro, essencial para o crescimento das plantas e qualidade das colheitas, ajudando a prevenir deficiências nutricionais.';
+                    benefits = `
+                        <ul>
+                            <li>Fornecimento contínuo de boro para culturas que necessitam de boro suplementar.</li>
+                            <li>Promove melhor desenvolvimento das raízes e maior qualidade dos frutos.</li>
+                        </ul>
+                    `;
+                    imageSrc = 'assets/img/produtos/FOSFATO NATURAL REATIVO/IMG_7851.JPG';
+                    break;
+                case 'gesso':
+                    title = 'Gesso Agricola';
+                    description = 'O Fosfato Natural Reativo é um fertilizante fosfatado de liberação lenta, ideal para solos ácidos e condições tropicais, promovendo crescimento sustentável das plantas.';
+                    benefits = `
+                        <ul>
+                            <li>Fonte de fósforo de liberação gradual, ideal para solos tropicais.</li>
+                            <li>Melhora o desenvolvimento radicular e a resistência a estresses ambientais.</li>
+                        </ul>
+                    `;
+                    imageSrc = 'assets/img/produtos/GESSO AGRICOLA/GESSO.JPG';
+                    break;
+                    
+                    case 'kcl':
+                    title = 'KCL';
+                    description = 'O Enxofre Bentonita é um fertilizante essencial para fornecer enxofre às plantas, melhorando a qualidade do solo e aumentando a produtividade das colheitas.';
+                    benefits = `
+                        <ul>
+                            <li>Melhoria na eficiência de outros nutrientes essenciais, como N, P e K.</li>
+                            <li>Maior resistência das plantas a pragas e doenças.</li>
+                            <li>Correção da acidez do solo.</li>
+                        </ul>
+                    `;
+                    imageSrc = 'assets/img/produtos/KCL/9 - IMG_2829.jpg';
+                    break;
+
+                    case 'map':
+                    title = 'MAP';
+                    description = 'O Enxofre Bentonita é um fertilizante essencial para fornecer enxofre às plantas, melhorando a qualidade do solo e aumentando a produtividade das colheitas.';
+                    benefits = `
+                        <ul>
+                            <li>Melhoria na eficiência de outros nutrientes essenciais, como N, P e K.</li>
+                            <li>Maior resistência das plantas a pragas e doenças.</li>
+                            <li>Correção da acidez do solo.</li>
+                        </ul>
+                    `;
+                    imageSrc = 'assets/img/produtos/MAP/MAP.jpeg';
+                    break;
+
+                    case 'npk':
+                    title = 'NPK Formulados';
+                    description = 'O Enxofre Bentonita é um fertilizante essencial para fornecer enxofre às plantas, melhorando a qualidade do solo e aumentando a produtividade das colheitas.';
+                    benefits = `
+                        <ul>
+                            <li>Melhoria na eficiência de outros nutrientes essenciais, como N, P e K.</li>
+                            <li>Maior resistência das plantas a pragas e doenças.</li>
+                            <li>Correção da acidez do solo.</li>
+                        </ul>
+                    `;
+                    imageSrc = 'assets/img/produtos/NPK FORMULADOS/15850723458957253.jpg';
+                    break;
+
+                    case 'simples':
+                    title = 'Super simples';
+                    description = 'O Enxofre Bentonita é um fertilizante essencial para fornecer enxofre às plantas, melhorando a qualidade do solo e aumentando a produtividade das colheitas.';
+                    benefits = `
+                        <ul>
+                            <li>Melhoria na eficiência de outros nutrientes essenciais, como N, P e K.</li>
+                            <li>Maior resistência das plantas a pragas e doenças.</li>
+                            <li>Correção da acidez do solo.</li>
+                        </ul>
+                    `;
+                    imageSrc = 'assets/img/produtos/SUPER SIMPLES/supersimples.jpg';
+                    break;
+
+                    case 'triplo':
+                    title = 'Super triplo';
+                    description = 'O Enxofre Bentonita é um fertilizante essencial para fornecer enxofre às plantas, melhorando a qualidade do solo e aumentando a produtividade das colheitas.';
+                    benefits = `
+                        <ul>
+                            <li>Melhoria na eficiência de outros nutrientes essenciais, como N, P e K.</li>
+                            <li>Maior resistência das plantas a pragas e doenças.</li>
+                            <li>Correção da acidez do solo.</li>
+                        </ul>
+                    `;
+                    imageSrc = 'assets/img/produtos/SUPER TRIPLO/6 - IMG_2826.jpg';
+                    break;
+
+                    case 'ureia':
+                    title = 'Ureia';
+                    description = 'O Enxofre Bentonita é um fertilizante essencial para fornecer enxofre às plantas, melhorando a qualidade do solo e aumentando a produtividade das colheitas.';
+                    benefits = `
+                        <ul>
+                            <li>Melhoria na eficiência de outros nutrientes essenciais, como N, P e K.</li>
+                            <li>Maior resistência das plantas a pragas e doenças.</li>
+                            <li>Correção da acidez do solo.</li>
+                        </ul>
+                    `;
+                    imageSrc = 'assets/img/produtos/UREIA/3 - IMG_2823.jpg';
+                    break;
+
+                    case 'varreduras':
+                    title = 'Varreduras';
+                    description = 'O Enxofre Bentonita é um fertilizante essencial para fornecer enxofre às plantas, melhorando a qualidade do solo e aumentando a produtividade das colheitas.';
+                    benefits = `
+                        <ul>
+                            <li>Melhoria na eficiência de outros nutrientes essenciais, como N, P e K.</li>
+                            <li>Maior resistência das plantas a pragas e doenças.</li>
+                            <li>Correção da acidez do solo.</li>
+                        </ul>
+                    `;
+                    imageSrc = 'assets/img/produtos/VARREDURAS/WhatsApp-Image-2022-03-08-at-13.18.01-1 (1).jpeg';
+                    break;
+
+                    
+            }
+            
+            productTitle.innerText = title;
+            productDescription.innerText = description;
+            productBenefits.innerHTML = benefits;
+            productImage.src = imageSrc;
+            
+            detailsSection.classList.remove('hidden');
+        });
+    });
+});
+</script>
+</html>
